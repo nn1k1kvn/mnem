@@ -41,6 +41,8 @@ npm install
 **example # 1**
 ```shell
 nano test   # insert and save text
+```
+```shell
 hex=$(cat test | xxd  -p); node -e "var bip39 = require('bip39'); console.log('mnemonics:', bip39.entropyToMnemonic('$hex'))"
 ```
 
